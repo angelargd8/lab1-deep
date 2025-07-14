@@ -6,15 +6,17 @@ Parte 1:
     Para mejorar la red, lo que se podría realizar es ajustar el learning rate, para acelerar un poquito el aprendizaje en vez de usar 0.005, tal vez probar con 0.01. Algo más que se puede realizar para mejorar el rendimiento de la red es aumentar el número de iteraciones con el fin de que el modelo converga, porque como se ve en el grafico sigue bajando. Y por último usar activaciones como ReLu para capas. 
 
 2. Interprete la gráfica de arriba
-    El gráfico lo que muestra es la función costo (J) en función del número de iteraciones por centenas. En este caso, en el eje Y, el valor del costo J mide qué tan bien está aprenediendo el modelo, entonces si tiene un valor bajo es un mejor desempeño.  En el principio se puede ver que inicia con un costo bajo y en la primera iteración tiene una subida, pero ya conforme el modelo va aprendiendo comienza a descender mientras que el costo disminuye constantemente. El costo sigue bajando luego de las 1800 iteraciones, entonces se puede seguir entrenando más o usar un learning rate más alto y que converga más rápido. 
+    El gráfico lo que muestra es la función costo (J) en función del número de iteraciones por centenas. En este caso, en el eje Y, el valor del costo J mide qué tan bien está aprendiendo el modelo, entonces si tiene un valor bajo es un mejor desempeño.  En el principio se puede ver que inicia con un costo bajo y en la primera iteración tiene una subida, pero ya conforme el modelo va aprendiendo comienza a descender mientras que el costo disminuye constantemente. El costo sigue bajando luego de las 1800 iteraciones, entonces se puede seguir entrenando más o usar un learning rate más alto y que converga más rápido. 
+
+Parte 2:
 
 3. ¿En qué consiste ```optim.SGD```?
-    optim.SGD es el optimizador descenso del gradiente estocástico de PyTorch. Esta funcion ajusta los pesos y sesgos del modelo durante el entrenamiento, 
+    optim.SGD es el optimizador descenso del gradiente estocástico de PyTorch. Esta función ajusta los pesos y sesgos del modelo durante el entrenamiento, 
     usando los calculos que se hacen en loss.backward().
 4. ¿En qué consiste ```nn.NLLLoss```?
     nn.NLLLoss es la función de pérdida que mide qué tan mal están las predicciones del modelo. 
     Es una función usada para clasificación multiclase y espera que el modelo produzca log probabilidades como salida.
 5. ¿Qué podría hacer para mejorar la red neuronal, y si no hay mejoras, por qué?
-    Se podria cambiar la funcion de activacion para ver si mejora su capacidad de aprendizaje.
-    Tambien se podrias agregar mas capas por si existieran otros patrones que no fueron tomados en tiempo o 
-    se podrian cambiar los hiperparametros para ver si se adaptan al conjunto de daots.
+    Se podría cambiar la función de activación para ver si mejora su capacidad de aprendizaje.
+    Tambien se podría agregar más capas por si existieran otros patrones que no fueron tomados en tiempo o 
+    se podrían cambiar los hiperparametros para ver si se adaptan al conjunto de datos.
