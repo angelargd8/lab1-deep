@@ -12,9 +12,9 @@ Parte 1:
     optim.SGD es el optimizador descenso del gradiente estocástico de PyTorch. Esta funcion ajusta los pesos y sesgos del modelo durante el entrenamiento, 
     usando los calculos que se hacen en loss.backward().
 4. ¿En qué consiste ```nn.NLLLoss```?
-    nn.NLLLoss es la función de pérdida de log verosimilitud negativa. Es una función usada para clasificación multiclase 
-    y espera que el modelo produzca log probabilidades como salida.
+    nn.NLLLoss es la función de pérdida que mide qué tan mal están las predicciones del modelo. 
+    Es una función usada para clasificación multiclase y espera que el modelo produzca log probabilidades como salida.
 5. ¿Qué podría hacer para mejorar la red neuronal, y si no hay mejoras, por qué?
     Se podria cambiar la funcion de activacion para ver si mejora su capacidad de aprendizaje.
-    Tambien se podrias agregar mas capas por si existieran otros patrones que no fueron tomados en tiempo.
-    Se podrian cambiar los hiperparametros para ver si se adaptan al conjunto de daots.
+    Tambien se podrias agregar mas capas por si existieran otros patrones que no fueron tomados en tiempo o 
+    se podrian cambiar los hiperparametros para ver si se adaptan al conjunto de daots.
